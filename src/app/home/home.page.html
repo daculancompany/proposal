@@ -1,0 +1,60 @@
+<ion-content>
+    <div class="logo-div">
+        <svg fill="#1da1f2" style="height: 60px" viewBox="0 0 24 24" class="r-13gxpu9 r-4qtqp9 r-yyyyoo r-j66t93 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr">
+            <g>
+                <path d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"></path>
+            </g>
+        </svg>
+        <div class="login-text">Log in to Twitter</div>
+    </div>
+    <ion-grid style="height: 40%">
+        <!-- align-items-center -->
+        <ion-row justify-content-center  style="height: 100%; flex-direction: column">
+            <div class="ion-padding-data">
+                <ion-item>
+                    <ion-label position="floating">Phone, email, or username </ion-label>
+                    <ion-input></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label position="floating">Password </ion-label>
+                    <ion-input></ion-input>
+                </ion-item>
+               <!--  <div class="error-login" *ngIf="isError">
+                    The username and password you entered did not match our records. Please double-check and try again.
+                </div> -->
+                <div class="div-login">
+                    <ion-button expand="block" class="login-button" shape="round" (click)="submitLogin()" >Log in</ion-button>
+                    <!-- <button class="btn-login button" (click)="submitLogin()" >Login</button> -->
+                </div>
+                <div class="forgot-password" >
+                    <span (click)="recovery()">Forgot password? </span>
+                    <span (click)="register()" >Sign Up for Twitter</span>
+                </div>
+            </div>
+            
+        </ion-row>
+    </ion-grid>
+    <div class="div-banner">
+    <div class="logo-background">
+        <svg fill="#1da1f2" style="height: 200px; width: 300px; position: absolute; right: 10px;" viewBox="0 0 24 24" class="r-13gxpu9 r-4qtqp9 r-yyyyoo r-j66t93 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr">
+            <g>
+                <path d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"></path>
+            </g>
+        </svg>
+    </div>
+    <div class="banner-container">
+        <div class="banner-wrap">
+            <ion-icon  class="banner-icon"  name="search"></ion-icon>
+            <span>Follow your interests.</span>
+        </div>
+        <div class="banner-wrap">
+            <ion-icon  class="banner-icon"  name="search"></ion-icon>
+            <span>Hear what people are talking about.</span>
+        </div>
+        <div class="banner-wrap last-banner">
+            <ion-icon  class="banner-icon"  name="search"></ion-icon>
+            <span>Join the conversation.</span>
+        </div>
+    </div>
+</div>
+</ion-content>
